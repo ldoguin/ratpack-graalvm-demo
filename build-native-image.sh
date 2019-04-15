@@ -1,7 +1,4 @@
 #!/bin/bash
-
-./gradlew clean shadowJar
-
 native-image --no-server \
     -jar build/libs/ratpack-graalvm-demo-all.jar \
     -H:Name=ratpack-graalvm-demo \
